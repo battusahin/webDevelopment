@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Grid Layout</title>	
+</head>
+
+<body>
+
+	<div class="container my-4">
+		<h2 class="my-5">Eşit Kolonlar</h2>
+		<div class="row ">
+
+			<div class="col border">collumn</div>
+		</div>
+		<div class="row my-2">
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+		</div>
+		<div class="row my-2">
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+		</div>
+		<div class="row my-2">
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+		</div>
+		<div class="row my-2">
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+			<div class="col border">collumn</div>
+		</div>
+
+		<h2 class="my-5">Eşit Olmayan Kolonlar</h2>
+		<div class="row ">
+			<div class="col-2 border">collumn</div>
+			<div class="col-10 border">collumn</div>
+		</div>
+		<div class="row ">
+			<div class="col-8 border">collumn</div>
+			<div class="col-4 border">collumn</div>
+		</div>
+		<div class="row ">
+			<div class="col-4 border">collumn</div>
+			<div class="col-5 border">collumn</div>
+		</div>
+		<div class="row ">
+			<div class="col-4 border mr-auto">collumn</div>
+			<div class="col-5 border ">collumn</div>
+		</div>
+
+		<h2 class="my-5">Kolon Sıralama</h2>
+		<div class="row ">
+			<div class="col-3 border order-2">3 collumn</div>    <!-- Grid order sıralama-->
+			<div class="col-4 border order-1">4 collumn</div>
+			<div class="col border order-0">5 collumn</div>
+		</div>
+
+		<h2 class="my-5">İç içe Kolon Kullanımı</h2>
+
+		<div class="row ">
+			<div class="col-4 border ">4 collumn</div>   
+			<div class="col-8 border ">8 collumn
+				<div class="row">
+					<div class="col bg-primary">6 col</div>
+					<div class="col bg-danger">6 col</div>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+
+
+	</div>
+	  
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

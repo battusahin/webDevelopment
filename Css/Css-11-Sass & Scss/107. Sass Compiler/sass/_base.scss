@@ -1,0 +1,8 @@
+/* Genel ayarlar bodynin varsayılan font büyüklüğü arka plan rengi ya da font family gibi vb. işlemler burada */
+
+$bg-color:pink;
+
+
+body{
+    background-color: $bg-color;
+}

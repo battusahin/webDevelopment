@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Floating Divs</title>
+	<style>
+		.box {
+			width: 120px;
+            height: 120px;
+		}
+        .mbox{
+            width: 30px;
+            height: 30px;
+            background: yellow;
+            position:relative;
+            top: 50px;
+            left: 50px;
+        }
+		#first {
+			background: red;
+            width: 100%;
+			position: sticky;
+            top: 50px;
+		}
+
+		#second {
+			background: blue;
+			position: relative;
+           
+		}
+
+		#third {
+			background: green;
+			position: fixed;
+            bottom: 0px;
+            right: 0px;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum facilis perspiciatis impedit harum tenetur rem ducimus iure amet vero doloribus hic error repellat, quibusdam tempore ipsum dignissimos magni quos!</p>
+
+	<div id="container" class="clearfix">
+
+		<div id="first" class="box">box 1</div>
+		<div id="second" class="box">
+            <div class="mbox"></div>
+        </div>
+		<div id="third" class="box">box 3</div>
+
+	</div>
+	
+	<div style="height: 3000px;"></div>
+	
+</body>
+
+</html>

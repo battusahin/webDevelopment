@@ -1,0 +1,51 @@
+p[title]{
+    border: 1px solid gray;
+    padding:5px;
+}
+p[title="third paragraph"]{
+    background-color: gold;
+}
+/* içinde geçmesi için */
+p[title~="forth"]{
+    background-color: blanchedalmond
+}
+/* Başlangıcında http olsun*/
+a[href^="http"]{
+    color:red;
+}
+/* bitişinde com olsun */
+a[href$="com"]{
+    color: aqua;
+}
+
+/* hem href="https://www.example.net" hemde target="_blank" olan etiket */
+a[href="https://www.example.net"][target="_blank"]{
+    color:yellow;
+}
+
+/* Form elemanları içinde kullanılır */
+input[type="text"]{
+    display: block;
+    width: 150px;
+    background-color: red;
+}
+
+input[type="button"]{
+    background: green;
+    color:#FFFFFF;
+    padding: 8px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

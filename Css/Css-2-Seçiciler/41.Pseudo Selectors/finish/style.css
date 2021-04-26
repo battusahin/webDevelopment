@@ -1,0 +1,111 @@
+/* Pseudo Element (Örneğin sayfa içersinde bir paragrafınilk harfini ilk satırını seçmek için yani bir elemanın bir parçasını seçmek için)*/
+
+p::first-line{
+    font-weight: bold;
+    color:brown;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+/*Yukarıdaki color özelliğini ezdik*/
+p.about::first-line{
+    color:green;
+}
+
+p::first-letter{
+    font-size: 48px;
+}
+/* floating dersinde nesneleri yanyana alırken float uyguladığımız nesneler normal akışın dışına cıkıcak, normal akışın dışına cıkan elemanları temizleme yaparken kullanıcaz.*/
+p::after{
+    content: "";
+    display: block;
+    background-color: yellow;
+    padding: 10px;
+}
+
+
+
+
+/*Pseudo Class (Kapsam içerisindeki elemanları örneğin ul elementi içersinden bişey seçerken*/
+
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+ul li:first-child{
+    background-color: red;
+}
+
+ul li:last-child{
+    background-color: red;
+}
+/* çift */
+ul li:nth-of-type(even){
+    border: 2px solid green;
+    
+}
+/* tek */
+ul li:nth-of-type(odd){
+    border: 2px solid blue;
+}
+
+a{
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    /*bloğa çevirdiğimiz için genşilik verebiliriz(border)*/
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+a:link{
+    color:red;
+}
+
+a:visited{
+    color:gray;
+}
+
+a:hover{
+    color:white;
+    background: green;
+}
+
+a:active{
+    color:green;
+    background: gold;
+}
+
+span{
+    display: none;
+    background: yellow;
+    padding: 20px;
+}
+
+div:hover span{
+    display: block;
+    color;white;
+    background:orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* Genel ayarlar bodynin varsayılan font büyüklüğü arka plan rengi ya da font family gibi vb. işlemler burada */
+body {
+  background-color: pink; }
+
+/* kolonlar satırlar vb.*/
+/*  herhangibir bölüm logo kutusu nav bölümü vb. gibi */

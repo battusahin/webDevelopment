@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.box1{
+    background: #2ecc71;
+    /*
+    grid-row-start:2;
+    grid-row-end: 3;
+    grid-column-start:2;
+    grid-column-end:3;
+    */
+    /*
+    grid-row: 1/2;
+    grid-column: 1/span 2;
+    */
+    grid-area: ;
+}
+.box2{
+    background: #3498db;
+    /*
+    grid-row: 1/span 2;
+    */
+    /*
+    grid-row:1/2;
+    grid-column: 1/2;
+    */
+    grid-area: B;
+}
+.box3{
+    background: #9b59b6;
+    grid-area: C;
+}
+.box4{
+    background: #e67e22;
+    grid-area: D;
+} 
+.box5{
+    background: #e74c3c;
+    grid-area: E;
+}
+.box6{
+    background: #16a085;
+    /*
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    */
+    /*
+    grid-row:1/2;
+    grid-column: 1/2;
+    */
+    grid-area:F ;
+}
+.container{
+    display: grid; 
+    /*
+    grid-template-rows: 150px 250px;  satır aralığını yazdık  
+    grid-template-columns: 100px 200px 300px;  sütun aralığını yazdık 
+    */
+    grid-template:200px 300px / 200px 3fr 1fr;
+    /*
+    grid-row-gap:10px ;     satırlar arasındaki boşlul 
+    grid-column-gap: 10px;   sütunlar arası boşluk 
+    */
+    grid-gap:10px 10px;
+    grid-template-areas: 
+        "A B C"
+        "D E F"  
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formlar</title>
+</head>
+<body>
+        <!-- Formun nereye gönderileceği söylenir.. -->
+    <form action="/home/Register"> 
+       
+        
+        <!-- 
+        Form kontrol türleri şunlardır ;
+
+        <input type="text">   :  Alınacak olan bilgi sözel bir ifade ise kullanılır. Örneğin ; Ad ,adres vb.
+
+        <input type="radio">   :  Alınacak olan bilgi çoklu seçim içinden sadece birinin seçilmesi istendiğinde kullanılır. Örneğin cinsiyet.
+
+        <input type="checkbox">   :  Alınacak olan bilgi sunulan alternatifler içinden birden fazla seçim istendiğinde kullanılır. Örneğin hobiler.
+
+        <input type="submit">   :  Formu server'daki web programına gönderecek olan buton.
+
+        <select> : Seçenekler arasından sadece birinin seçilmesini istediğimiz zaman kullanılır. Örneğin, şehir seçimi.-->
+       
+         <!-- http://www.belgeler.org/hpm/html-php-mysql-giris_prg-html_form.html -->
+          
+        <p>
+            Ad : <input type="text" name="ad" placeholder="İsim Giriniz!" required>
+        </p>
+        <p>
+            Soyad : <input type="text" name="Soyad" required>
+        </p>
+        <p>
+            Eposta : <input type="email" name="email" required>
+        </p>
+        <p>
+            Beni Hatırla: <input type="checkbox" name="benihatirla">
+        </p> 
+        <p>
+            Erkek: <input type="radio" name="Cinsiyet">
+            Kız: <input type="radio" name="Cinsiyet">
+        </p> 
+        
+        <p>
+            Hobiler: <br>
+            <ul type="none">
+                <li>Sinema <input type="checkbox" name="hobi"></li>
+                <li>Spor <input type="checkbox" name="hobi"></li>
+                <li>Kitap Okuma <input type="checkbox" name="hobi"></li>
+            </ul>
+        </p>
+        <p>
+           Şehir:
+            <select name="şehir">
+                <option>Kocaeli</option>
+                <option>Balıkesir</option>
+                <option>Çanakkale</option>
+                <option>İstanbul</option>
+                <option>İzmir</option>
+                <option>Bursa</option>
+                <option>Sinop</option>
+                <option>Ankara</option>
+                <option>Edirne</option>
+            </select>
+        </p>
+        
+        <p>
+          <!-- Çoklu seçim ctrl basılı tutunca 1'den fazla seçim yaparız.. -->
+           Şehir:
+            <select multiple name="şehirler">
+                <option>Kocaeli</option>
+                <option>Balıkesir</option>
+                <option>Çanakkale</option>
+                <option>İstanbul</option>
+                <option>İzmir</option>
+                <option>Bursa</option>
+                <option>Sinop</option>
+                <option>Ankara</option>
+                <option>Edirne</option>
+                
+            </select>
+        </p>
+        <input type="submit" value="Kaydet">
+    </form>
+    
+     
+</body>
+</html>

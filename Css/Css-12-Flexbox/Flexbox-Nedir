@@ -1,0 +1,28 @@
+Flexbox nedir??
+
+
+<---------------flex container özellikleri-------------------->
+   
+    1.flex-direction -->  elemanları alt alta yan yana tersten sıralayabiliriz.
+
+    2.flex-wrap --> container içindeki elemanları containerin boyuna göre konumlandırabiliriz. 
+
+    3.justify-content --> yatayda elemanları sıralamak konumlandırmak.
+
+    4.aling-items --> dikeyde sıralama justify-content tersi 
+
+    5.aling-content --> her bir satır arasındaki mesafeler 
+
+
+
+ <----------- container içindeki flex-item lar ------------>
+
+    1.align-self --> her bir elemanı tek tek hareket ettirebikiriz.
+
+    2.order --> sıralama işlemleri 
+
+    3.flex-grow: 0 --> container büyüdüğü zaman flex-itemlerin hangi oranda büyüyeceği          -------------------
+
+    4.flex-shrink: 0 --> container küçüldğü zaman içindeki itemlerin ne oradan küçüleceği.      -------------------  --------->> Bu 3 özellik tek satırda kullanılabilir. --> flex : 0 1 auto;
+
+    5.flex-basis: auto --> her bir elemana başlangıçta vereceğimiz genişlik.                    --------------------
